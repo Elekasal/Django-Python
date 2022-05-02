@@ -7,12 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <p>{{data.activity}}</p>
-    <p>{{data.type}}</p>
-    <p>{{data.participants}}</p>
-    <p>{{data.price}}</p>
-    <p>{{data.link}}</p>
-    <p>{{data.key}}</p>
-    <p>{{data.accesibility}}</p>
+    <p>{{dataNombre}}</p>
+    <form method="POST">{% csrf_token %}
+        <label for="nombre">nombre</label>
+        <input type="text" name="Var" value="nombre">
+        <input type="submit" value="button">
+    </form>
 </body>
 </html>

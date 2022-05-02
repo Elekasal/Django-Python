@@ -5,4 +5,4 @@ def home (request):
     url='https://www.boredapi.com/api/activity'
     data=requests.get(url)
     data=data.json()
-    return render(request,'Bored/home.html',{'data':data,'url':url})
+    return render(request,'Bored/home.html',{'data':data})
